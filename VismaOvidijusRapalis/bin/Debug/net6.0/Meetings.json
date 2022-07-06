@@ -7,24 +7,13 @@
       "Jack": "2022-07-06T00:00:00+03:00"
     },
     "Id": "774fe798-3ea5-4e72-9522-65e03526305b",
-    "Name": "Antras",
-    "ResponsiblePerson": "Kitas",
+    "Name": "Vasaros aptarimas",
+    "ResponsiblePerson": "Jonas",
     "Description": "Trumpas darbu aptarimasmeet",
     "Category": 1,
     "Type": 0,
     "StartDate": "2000-07-04T15:40:54.1050687+03:00",
     "EndDate": "2030-07-04T12:40:54.1162205Z"
-  },
-  "96267cb9-1fd7-446c-a377-f3743fd0d8f8": {
-    "ParticipantsDic": {},
-    "Id": "96267cb9-1fd7-446c-a377-f3743fd0d8f8",
-    "Name": "Trecias",
-    "ResponsiblePerson": "Dar",
-    "Description": "Ildarbugas pokalbis",
-    "Category": 1,
-    "Type": 0,
-    "StartDate": "2018-07-04T15:40:54.1050687+03:00",
-    "EndDate": "2022-07-04T12:40:54.1162205Z"
   },
   "d1555465-2476-48f8-a8e0-13c378fbf964": {
     "ParticipantsDic": {
@@ -32,7 +21,7 @@
     },
     "Id": "d1555465-2476-48f8-a8e0-13c378fbf964",
     "Name": "Ketvirtas",
-    "ResponsiblePerson": "Pl",
+    "ResponsiblePerson": "Ovidijus",
     "Description": "Dienos meetas",
     "Category": 3,
     "Type": 0,
@@ -68,7 +57,7 @@
     "ResponsiblePerson": "Vanilla",
     "Description": "B",
     "Category": 1,
-    "Type": 0,
+    "Type": 1,
     "StartDate": "1999-10-10T00:00:00",
     "EndDate": "2000-10-10T00:00:00"
   }

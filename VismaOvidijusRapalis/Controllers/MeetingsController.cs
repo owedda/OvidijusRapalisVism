@@ -18,18 +18,18 @@ namespace VismaOvidijusRapalis.Controllers
 
         public bool AddPersonToMeeting(Guid id, string personName)
         {
-            if (_meetingsDictionary.ContainsKey(id) && !_meetingsDictionary[id].ParticipantsDic.ContainsKey(personName))
-            {
-                if (checkIfPersonAlreadyInMeeting(id, personName))
-                    return false;
-                else
-                {
-                    _meetingsDictionary[id].ParticipantsDic.Add(personName, DateTime.Today);
-                    _meetingsRepository.Save(_meetingsDictionary);
-                    return true;
-                }
-            }
-            return false;
+            if(!_meetingsDictionary.ContainsKey(id))
+                return false;
+
+            if (_meetingsDictionary[id].ParticipantsDic.ContainsKey(personName))
+                return false;
+
+            if (checkIfPersonAlreadyInMeeting(id, personName))
+                return false;
+
+            _meetingsDictionary[id].ParticipantsDic.Add(personName, DateTime.Today);
+            _meetingsRepository.Save(_meetingsDictionary);
+            return true;
         }
 
         private bool checkIfPersonAlreadyInMeeting(Guid id, string personName)
@@ -58,13 +58,15 @@ namespace VismaOvidijusRapalis.Controllers
 
         public bool DeleteMeeting(Guid id, string user)
         {
-            if (_meetingsDictionary.ContainsKey(id) && _meetingsDictionary[id].ResponsiblePerson.Equals(user))
-            {
-                _meetingsDictionary.Remove(id);
-                _meetingsRepository.Save(_meetingsDictionary);
-                return true;
-            }
-            return false;
+            if (!_meetingsDictionary.ContainsKey(id))
+                return false;
+
+            if (!_meetingsDictionary[id].ResponsiblePerson.Equals(user))
+                return false;
+
+            _meetingsDictionary.Remove(id);
+            _meetingsRepository.Save(_meetingsDictionary);
+            return true;
         }
 
         public IDictionary<Guid, Meeting> FilterByAttendeesCount(int number)

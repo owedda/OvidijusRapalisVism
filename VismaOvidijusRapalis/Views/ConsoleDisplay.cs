@@ -14,11 +14,9 @@ namespace VismaOvidijusRapalis.Views
             allMeetings = manageMeetings;
             isMenuCommandsStillWorking = true;
             isMenuFiltersStillWorking = true;
-            //user = "";
         }
         public void InOutMeetings()
         {
-            // allMeetings.CreateMeeting(new Meeting(Guid.NewGuid(), "name", "esponsiblePers", "description", Category.Hub, Type.Live, DateTime.Now, DateTime.Now));
             user = InOutGetUser();         
 
             while (isMenuCommandsStillWorking)
@@ -26,7 +24,7 @@ namespace VismaOvidijusRapalis.Views
                 PrintCommandMenu();
                 var input = Console.ReadKey();
                 Console.Clear();
-                switch (input.Key) //Switch on Key enum
+                switch (input.Key)
                 {
                     case ConsoleKey.A:
                         InOutEnterNewMeeting();
@@ -51,7 +49,7 @@ namespace VismaOvidijusRapalis.Views
                         break;
                 }
             }
-            
+            Console.WriteLine("Press any key to exit...");
             Console.ReadKey();
         }
         private void InOutFilter()
@@ -256,22 +254,30 @@ namespace VismaOvidijusRapalis.Views
             Console.WriteLine("(C) Filter by category");
             Console.WriteLine("Enter category: ");
             Category cat;
-            Enum.TryParse<Category>(Console.ReadLine(), true, out cat);
-            foreach (var item in allMeetings.FilterByCategory(cat).Values)
+            if (Enum.TryParse<Category>(Console.ReadLine(), true, out cat))
             {
-                Console.WriteLine(item.ToString());
+                foreach (var item in allMeetings.FilterByCategory(cat).Values)
+                {
+                    Console.WriteLine(item.ToString());
+                }
             }
+            else
+                HandleInvalidCategory();
         }
         private void InOutFilterByType()
         {
             Console.WriteLine("(T) Filter by type");
             Console.WriteLine("Enter type: ");
             TypeValue type;
-            Enum.TryParse<TypeValue>(Console.ReadLine(), true, out type);
-            foreach (var item in allMeetings.FilterByType(type).Values)
+            if (Enum.TryParse<TypeValue>(Console.ReadLine(), true, out type))
             {
-                Console.WriteLine(item.ToString());
+                foreach (var item in allMeetings.FilterByType(type).Values)
+                {
+                    Console.WriteLine(item.ToString());
+                }
             }
+            else
+                HandleInvalidType();
         }
 
         private void InOutFilterByDate()
@@ -280,26 +286,44 @@ namespace VismaOvidijusRapalis.Views
                  " 2022-01-01 meetings that will happen between 2022 - 01 - 01 / and 2022 - 02 - 01)");
             Console.Write("Enter start date (e.g. 1987-10-02): ");
 
-
-
-            DateTime startDate = DateTime.Parse(Console.ReadLine());
-            Console.Write("Enter end date (e.g. 1987-10-02) or / : ");
-            string endDateValue = Console.ReadLine();
-
-            if (endDateValue.Equals("/"))
+            Console.Write("Enter start date (e.g. 1987-10-02): ");
+            DateTime startDate;
+            if (DateTime.TryParse(Console.ReadLine(), out startDate))
             {
-                foreach (var item in allMeetings.FilterByDates(startDate).Values)
+                Console.Write("Enter end date (e.g. 1987-10-02) or / : ");
+                string endDateValue = Console.ReadLine();
+
+                if (endDateValue.Equals("/"))
                 {
-                    Console.WriteLine(item.ToString());
+                    PrintAllDates(startDate);
+                }
+                else
+                {
+                    DateTime endDate;
+                    if (DateTime.TryParse(endDateValue, out endDate) && endDate>startDate)
+                    {
+                        PrintAllDates(startDate, endDate);
+                    }
+                    else
+                        HandleInvalidDate();
                 }
             }
             else
+                HandleInvalidDate();
+        }
+        private void PrintAllDates(DateTime startDate)
+        {
+            foreach (var item in allMeetings.FilterByDates(startDate).Values)
             {
-                DateTime endDate = DateTime.Parse(endDateValue);
-                foreach (var item in allMeetings.FilterByDates(startDate, endDate).Values)
-                {
-                    Console.WriteLine(item.ToString());
-                }
+                Console.WriteLine(item.ToString());
+            }
+        }
+
+        private void PrintAllDates(DateTime startDate, DateTime endDate)
+        {
+            foreach (var item in allMeetings.FilterByDates(startDate, endDate).Values)
+            {
+                Console.WriteLine(item.ToString());
             }
         }
 

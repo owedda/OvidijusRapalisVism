@@ -1,0 +1,17 @@
+C:\Users\OWEEDA\source\repos\VismaOvidijusRapalis\VismaOvidijusRapalis\bin\Debug\net6.0\VismaOvidijusRapalis.exe
+C:\Users\OWEEDA\source\repos\VismaOvidijusRapalis\VismaOvidijusRapalis\bin\Debug\net6.0\VismaOvidijusRapalis.deps.json
+C:\Users\OWEEDA\source\repos\VismaOvidijusRapalis\VismaOvidijusRapalis\bin\Debug\net6.0\VismaOvidijusRapalis.runtimeconfig.json
+C:\Users\OWEEDA\source\repos\VismaOvidijusRapalis\VismaOvidijusRapalis\bin\Debug\net6.0\VismaOvidijusRapalis.dll
+C:\Users\OWEEDA\source\repos\VismaOvidijusRapalis\VismaOvidijusRapalis\bin\Debug\net6.0\VismaOvidijusRapalis.pdb
+C:\Users\OWEEDA\source\repos\VismaOvidijusRapalis\VismaOvidijusRapalis\obj\Debug\net6.0\VismaOvidijusRapalis.csproj.AssemblyReference.cache
+C:\Users\OWEEDA\source\repos\VismaOvidijusRapalis\VismaOvidijusRapalis\obj\Debug\net6.0\VismaOvidijusRapalis.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\OWEEDA\source\repos\VismaOvidijusRapalis\VismaOvidijusRapalis\obj\Debug\net6.0\VismaOvidijusRapalis.AssemblyInfoInputs.cache
+C:\Users\OWEEDA\source\repos\VismaOvidijusRapalis\VismaOvidijusRapalis\obj\Debug\net6.0\VismaOvidijusRapalis.AssemblyInfo.cs
+C:\Users\OWEEDA\source\repos\VismaOvidijusRapalis\VismaOvidijusRapalis\obj\Debug\net6.0\VismaOvidijusRapalis.csproj.CoreCompileInputs.cache
+C:\Users\OWEEDA\source\repos\VismaOvidijusRapalis\VismaOvidijusRapalis\obj\Debug\net6.0\VismaOvidijusRapalis.dll
+C:\Users\OWEEDA\source\repos\VismaOvidijusRapalis\VismaOvidijusRapalis\obj\Debug\net6.0\refint\VismaOvidijusRapalis.dll
+C:\Users\OWEEDA\source\repos\VismaOvidijusRapalis\VismaOvidijusRapalis\obj\Debug\net6.0\VismaOvidijusRapalis.pdb
+C:\Users\OWEEDA\source\repos\VismaOvidijusRapalis\VismaOvidijusRapalis\obj\Debug\net6.0\VismaOvidijusRapalis.genruntimeconfig.cache
+C:\Users\OWEEDA\source\repos\VismaOvidijusRapalis\VismaOvidijusRapalis\obj\Debug\net6.0\ref\VismaOvidijusRapalis.dll
+C:\Users\OWEEDA\source\repos\VismaOvidijusRapalis\VismaOvidijusRapalis\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\OWEEDA\source\repos\VismaOvidijusRapalis\VismaOvidijusRapalis\obj\Debug\net6.0\VismaOvidijusRapalis.csproj.CopyComplete

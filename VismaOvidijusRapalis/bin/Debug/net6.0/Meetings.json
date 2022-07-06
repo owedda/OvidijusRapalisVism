@@ -1,0 +1,75 @@
+{
+  "774fe798-3ea5-4e72-9522-65e03526305b": {
+    "ParticipantsDic": {
+      "Jonas": "2022-07-04T22:06:05.6507093+03:00",
+      "Petras": "2022-07-04T22:06:05.7896144+03:00",
+      "Gvidas": "2022-07-05T18:44:01.7683233+03:00",
+      "Jack": "2022-07-06T00:00:00+03:00"
+    },
+    "Id": "774fe798-3ea5-4e72-9522-65e03526305b",
+    "Name": "Antras",
+    "ResponsiblePerson": "Kitas",
+    "Description": "Trumpas darbu aptarimasmeet",
+    "Category": 1,
+    "Type": 0,
+    "StartDate": "2000-07-04T15:40:54.1050687+03:00",
+    "EndDate": "2030-07-04T12:40:54.1162205Z"
+  },
+  "96267cb9-1fd7-446c-a377-f3743fd0d8f8": {
+    "ParticipantsDic": {},
+    "Id": "96267cb9-1fd7-446c-a377-f3743fd0d8f8",
+    "Name": "Trecias",
+    "ResponsiblePerson": "Dar",
+    "Description": "Ildarbugas pokalbis",
+    "Category": 1,
+    "Type": 0,
+    "StartDate": "2018-07-04T15:40:54.1050687+03:00",
+    "EndDate": "2022-07-04T12:40:54.1162205Z"
+  },
+  "d1555465-2476-48f8-a8e0-13c378fbf964": {
+    "ParticipantsDic": {
+      "Gvidas": "2022-07-05T18:47:42.2746377+03:00"
+    },
+    "Id": "d1555465-2476-48f8-a8e0-13c378fbf964",
+    "Name": "Ketvirtas",
+    "ResponsiblePerson": "Pl",
+    "Description": "Dienos meetas",
+    "Category": 3,
+    "Type": 0,
+    "StartDate": "2015-07-04T15:40:54.1050687+03:00",
+    "EndDate": "2022-07-04T12:40:54.1162205Z"
+  },
+  "5e555108-96e7-4e84-8dfb-098ac91da3ec": {
+    "ParticipantsDic": {},
+    "Id": "5e555108-96e7-4e84-8dfb-098ac91da3ec",
+    "Name": ".Net Jono meetas",
+    "ResponsiblePerson": "John",
+    "Description": "Aptarimas prie kavosmeet",
+    "Category": 1,
+    "Type": 0,
+    "StartDate": "2023-10-08T00:00:00",
+    "EndDate": "2023-10-30T00:00:00"
+  },
+  "5048097d-8973-4fb0-90c1-6db08da443d5": {
+    "ParticipantsDic": {},
+    "Id": "5048097d-8973-4fb0-90c1-6db08da443d5",
+    "Name": "Visma",
+    "ResponsiblePerson": "Jack",
+    "Description": "Simple",
+    "Category": 1,
+    "Type": 0,
+    "StartDate": "2000-10-10T00:00:00",
+    "EndDate": "2015-10-10T00:00:00"
+  },
+  "dcf8ffbd-caae-4bd0-b2a6-1faddf2cb0b9": {
+    "ParticipantsDic": {},
+    "Id": "dcf8ffbd-caae-4bd0-b2a6-1faddf2cb0b9",
+    "Name": "Killa",
+    "ResponsiblePerson": "Vanilla",
+    "Description": "B",
+    "Category": 1,
+    "Type": 0,
+    "StartDate": "1999-10-10T00:00:00",
+    "EndDate": "2000-10-10T00:00:00"
+  }
+}

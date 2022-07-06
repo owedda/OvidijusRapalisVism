@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "lL2hMCrrW7aC5C9H50ZITdbHji5xnp/dXgrqlYn0QFCVLL3D4CZtDXt6zEuPp7FvRw/LkutQ2kO+XXnOn7iBgQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\OWEEDA\\source\\repos\\VismaOvidijusRapalis\\VismaOvidijusRapalis\\VismaOvidijusRapalis.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\OWEEDA\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
